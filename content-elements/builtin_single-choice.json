@@ -1,0 +1,654 @@
+[
+  {
+    "id": "builtin_single-choice-ism9nF",
+    "formData": {
+      "choices$en": [
+        {
+          "title": "yes",
+          "value": "yes"
+        },
+        {
+          "title": "no",
+          "value": "no"
+        },
+        {
+          "title": "A little",
+          "value": "A little"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Are you currently experiencing difficulty in breathing (struggling for each breath, can only speak in single words)?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-16T14:14:55.124Z",
+    "modifiedOn": "2021-03-16T14:14:55.124Z"
+  },
+  {
+    "id": "builtin_single-choice--Wdr01",
+    "formData": {
+      "choices$en": [
+        {
+          "title": "yes",
+          "value": "yes"
+        },
+        {
+          "title": "no",
+          "value": "no"
+        },
+        {
+          "title": "a little",
+          "value": "a little"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Pain in chest? (constant tightness or crushing sensation)?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-16T14:17:28.009Z",
+    "modifiedOn": "2021-03-16T14:17:28.009Z"
+  },
+  {
+    "id": "builtin_single-choice-DkMUib",
+    "formData": {
+      "choices$en": [
+        {
+          "title": "yes",
+          "value": "yes"
+        },
+        {
+          "title": "no",
+          "value": "no"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Feeling confused or unsure of where you are?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-16T14:18:24.439Z",
+    "modifiedOn": "2021-03-16T14:18:24.439Z"
+  },
+  {
+    "id": "builtin_single-choice-g9u-sM",
+    "formData": {
+      "choices$en": [
+        {
+          "title": "yes",
+          "value": "yes"
+        },
+        {
+          "title": "no",
+          "value": "no"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Losing consciousness?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-16T14:19:53.153Z",
+    "modifiedOn": "2021-03-16T14:19:53.153Z"
+  },
+  {
+    "id": "builtin_single-choice-OjID7X",
+    "formData": {
+      "choices$en": [
+        {
+          "title": "Fever and/or chills",
+          "value": "Fever and/or chills"
+        },
+        {
+          "title": "Cough or barking cough (croup)",
+          "value": "Cough or barking cough (croup)"
+        },
+        {
+          "title": "Difficulty swallowing",
+          "value": "Difficulty swallowing"
+        },
+        {
+          "title": "Runny or stuffy/congested nose/Sore throat",
+          "value": "Runny nose or Sore throat"
+        },
+        {
+          "title": "Decrease or loss of taste or smell",
+          "value": "Decrease or loss of taste or smell"
+        },
+        {
+          "title": "Headache",
+          "value": "Headache"
+        },
+        {
+          "title": "Digestive issues like nausea/vomiting, diarrhea, stomach pain",
+          "value": " nausea/vomiting, diarrhea, stomach pain"
+        },
+        {
+          "title": "Muscle aches",
+          "value": "Muscle aches"
+        },
+        {
+          "title": "Extreme tiredness",
+          "value": "Extreme tiredness"
+        },
+        {
+          "title": "None of the above",
+          "value": "none"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Are you currently experiencing any of these symptoms?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-16T14:31:26.666Z",
+    "modifiedOn": "2021-03-16T14:31:26.666Z"
+  },
+  {
+    "id": "builtin_single-choice-dbkZ6F",
+    "formData": {
+      "choices$en": [
+        {
+          "title": "yes",
+          "value": "yes"
+        },
+        {
+          "title": "no",
+          "value": "no"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Are your symptoms normal for you (related to a medical condition you already have)?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-18T13:23:55.753Z",
+    "modifiedOn": "2021-03-18T13:23:55.753Z"
+  },
+  {
+    "id": "builtin_single-choice-556yCX",
+    "formData": {
+      "choices$en": [
+        {
+          "title": "treatment that weakens your immune system, for ex. chemotherapy, medication for transplants, corticosteroids, TNF inhibitors",
+          "value": "treat"
+        },
+        {
+          "title": "condition that weakens your immune system, for ex. lupus, rheumatoid arthritis, immunodeficiency disorder",
+          "value": "condition"
+        },
+        {
+          "title": "chronic long-lasting health condition, for ex. diabetes, emphysema, asthma, heart condition, COPD",
+          "value": "chronic"
+        },
+        {
+          "title": "Regularly going to a hospital for a treatment, for ex. dialysis, surgery, cancer treatment",
+          "value": "regular"
+        },
+        {
+          "title": "none",
+          "value": "none"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Are you in any of these at-risk groups?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-18T13:24:42.652Z",
+    "modifiedOn": "2021-03-22T23:27:32.315Z"
+  },
+  {
+    "id": "builtin_single-choice-7HaOf0",
+    "formData": {
+      "choices$en": [
+        {
+          "title": "yes",
+          "value": "yes"
+        },
+        {
+          "title": "no",
+          "value": "no"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Have you recently undergone a tissue or organ transplantation?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-18T13:29:10.645Z",
+    "modifiedOn": "2021-03-22T03:49:55.966Z"
+  },
+  {
+    "id": "builtin_single-choice-FhLFXB",
+    "formData": {
+      "choices$en": [
+        {
+          "title": "Today",
+          "value": "Today"
+        },
+        {
+          "title": "In the past week(2-6 days)",
+          "value": "p_week"
+        },
+        {
+          "title": "More than a week ago(7 - 11 days ago)",
+          "value": "w_week"
+        },
+        {
+          "title": "About 2 weeks ago(12 - 14 days ago)",
+          "value": "w2_week"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "How long have you been feeling uneasy?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-18T13:51:36.201Z",
+    "modifiedOn": "2021-03-22T03:50:27.609Z"
+  },
+  {
+    "id": "builtin_single-choice-z7Q77f",
+    "formData": {
+      "choices$en": [
+        {
+          "title": "yes",
+          "value": "yes"
+        },
+        {
+          "title": "no",
+          "value": "no"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": ""
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-18T22:09:58.258Z",
+    "modifiedOn": "2021-03-19T16:08:19.363Z"
+  },
+  {
+    "id": "builtin_single-choice-_Vur86",
+    "formData": {
+      "choices$en": [
+        {
+          "title": "yes",
+          "value": "yes"
+        },
+        {
+          "title": "no",
+          "value": "no"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Did you get hit by anything on your head?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-19T15:33:13.939Z",
+    "modifiedOn": "2021-03-19T15:43:54.471Z"
+  },
+  {
+    "id": "builtin_single-choice-VGkrrA",
+    "formData": {
+      "choices$en": [
+        {
+          "title": "yes",
+          "value": "yes"
+        },
+        {
+          "title": "no",
+          "value": "no"
+        },
+        {
+          "title": "from a little long time",
+          "value": "long"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Sensitive to light from today?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-19T16:17:54.922Z",
+    "modifiedOn": "2021-03-19T16:46:21.053Z"
+  },
+  {
+    "id": "builtin_single-choice-IdHHWO",
+    "formData": {
+      "choices$en": [
+        {
+          "title": "yes",
+          "value": "yes"
+        },
+        {
+          "title": "no",
+          "value": "no"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Are you feeling sensitive to light?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-19T16:47:23.499Z",
+    "modifiedOn": "2021-03-19T16:47:23.499Z"
+  },
+  {
+    "id": "builtin_single-choice-w-rUyl",
+    "formData": {
+      "choices$en": [
+        {
+          "title": "yes",
+          "value": "yes"
+        },
+        {
+          "title": "no",
+          "value": "no"
+        },
+        {
+          "title": "from a little long time",
+          "value": "long"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Sensitive to light from today?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-19T16:49:02.518Z",
+    "modifiedOn": "2021-03-19T16:49:02.518Z"
+  },
+  {
+    "id": "builtin_single-choice-FDRgpg",
+    "formData": {
+      "choices$en": [
+        {
+          "title": "yes",
+          "value": "yes"
+        },
+        {
+          "title": "no",
+          "value": "no"
+        },
+        {
+          "title": "A little",
+          "value": "A little"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Are you currently experiencing Fatigue?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-21T13:35:50.191Z",
+    "modifiedOn": "2021-03-21T13:35:50.191Z"
+  },
+  {
+    "id": "builtin_single-choice-tNO6Md",
+    "formData": {
+      "choices$en": [
+        {
+          "title": "yes",
+          "value": "yes"
+        },
+        {
+          "title": "no",
+          "value": "no"
+        },
+        {
+          "title": "A little",
+          "value": "A little"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Are you experiencing any symptoms of lump or area of thickening that can be felt under the skin?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-21T13:42:39.522Z",
+    "modifiedOn": "2021-03-21T18:24:09.617Z"
+  },
+  {
+    "id": "builtin_single-choice-ITUeuM",
+    "formData": {
+      "choices$en": [
+        {
+          "title": "yes",
+          "value": "yes"
+        },
+        {
+          "title": "no",
+          "value": "no"
+        },
+        {
+          "title": "A little",
+          "value": "A little"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Are you experiencing any weight changes, including unintended loss or gain?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-21T13:48:58.209Z",
+    "modifiedOn": "2021-03-21T18:24:20.981Z"
+  },
+  {
+    "id": "builtin_single-choice-3eRkfG",
+    "formData": {
+      "choices$en": [
+        {
+          "title": "yes",
+          "value": "yes"
+        },
+        {
+          "title": "no",
+          "value": "no"
+        },
+        {
+          "title": "A little",
+          "value": "A little"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Are you experiencing any Skin changes, such as yellowing, darkening or redness of the skin, sores that won't heal, or changes to existing moles"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-21T13:54:15.057Z",
+    "modifiedOn": "2021-03-21T13:54:15.057Z"
+  },
+  {
+    "id": "builtin_single-choice-ATM-sA",
+    "formData": {
+      "choices$en": [
+        {
+          "title": "yes",
+          "value": "yes"
+        },
+        {
+          "title": "no",
+          "value": "no"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "In the last 14 days, have you been identified as a “close contact” of someone who currently has COVID-19?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-23T00:18:41.286Z",
+    "modifiedOn": "2021-03-23T00:18:41.286Z"
+  },
+  {
+    "id": "builtin_single-choice-cBjxm-",
+    "formData": {
+      "choices$en": [
+        {
+          "title": "yes",
+          "value": "yes"
+        },
+        {
+          "title": "no",
+          "value": "no"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Please confirm."
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-24T14:07:07.274Z",
+    "modifiedOn": "2021-03-24T14:07:07.274Z"
+  },
+  {
+    "id": "builtin_single-choice-FgLTxC",
+    "formData": {
+      "choices$en": [
+        {
+          "title": "8:00 AM to 10:00 AM",
+          "value": "mor"
+        },
+        {
+          "title": "10:00 AM to 12:00 PM",
+          "value": "mor1"
+        },
+        {
+          "title": "12:00 PM to 2:00 PM",
+          "value": "af"
+        },
+        {
+          "title": "2:00 PM to 4:00 PM",
+          "value": "af1"
+        },
+        {
+          "title": "4:00 PM to 6:00 PM",
+          "value": "ev"
+        },
+        {
+          "title": "6:00 PM to 8:00 PM",
+          "value": "ev1"
+        },
+        {
+          "title": "8:00 PM to 10:00 PM",
+          "value": "ng"
+        },
+        {
+          "title": "emergency",
+          "value": "emergency"
+        },
+        {
+          "title": "call ambulence",
+          "value": "call"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Please select a suitable time slot."
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-24T14:16:03.202Z",
+    "modifiedOn": "2021-03-24T14:16:03.202Z"
+  },
+  {
+    "id": "builtin_single-choice-xjw4na",
+    "formData": {
+      "choices$en": [
+        {
+          "title": "Regina Drive-Thru Testing Site",
+          "value": "Regina Drive-Thru Testing Site"
+        },
+        {
+          "title": "Prince Albert Drive-Thru Testing Site",
+          "value": "Prince Albert Drive-Thru Testing Site"
+        },
+        {
+          "title": "Saskatoon Drive-Thru Testing Site",
+          "value": "Saskatoon Drive-Thru Testing Site"
+        },
+        {
+          "title": "Yorkton Drive-Thru Testing Site",
+          "value": "Yorkton Drive-Thru Testing Site"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Select your preseffered location:"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-24T17:05:10.606Z",
+    "modifiedOn": "2021-03-24T17:05:10.606Z"
+  },
+  {
+    "id": "builtin_single-choice-neDVaE",
+    "formData": {
+      "choices$en": [
+        {
+          "title": "March 25 2021",
+          "value": "March 25 2021"
+        },
+        {
+          "title": "March 26 2021",
+          "value": "March 26 2021"
+        },
+        {
+          "title": "March 27 2021",
+          "value": "March 27 2021"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Please pick a date:"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-24T19:57:19.097Z",
+    "modifiedOn": "2021-03-24T20:25:46.244Z"
+  },
+  {
+    "id": "builtin_single-choice-H_i22F",
+    "formData": {
+      "choices$en": [
+        {
+          "title": "yes",
+          "value": "yes"
+        },
+        {
+          "title": "no",
+          "value": "no"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Do you want me to book an appointment with a doctor for covid testing?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-24T21:00:15.993Z",
+    "modifiedOn": "2021-03-24T21:00:15.993Z"
+  }
+]

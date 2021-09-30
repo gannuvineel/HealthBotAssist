@@ -1,0 +1,895 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "description": "",
+  "nodes": [
+    {
+      "id": "ae53da5629",
+      "name": "entry",
+      "onEnter": [],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-Question1"
+        }
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "skill-549f71",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-Question1",
+      "flow": "skills/choice-549f71.flow.json",
+      "next": [
+        {
+          "caption": "User picked [yes]",
+          "condition": "temp['skill-choice-ret-ougwcwrq6u'] == \"yes\"",
+          "node": "choice-Question2"
+        },
+        {
+          "caption": "User picked [no]",
+          "condition": "temp['skill-choice-ret-ougwcwrq6u'] == \"no\"",
+          "node": "choice-Question2"
+        },
+        {
+          "caption": "User picked [A little]",
+          "condition": "temp['skill-choice-ret-ougwcwrq6u'] == \"A little\"",
+          "node": "choice-Question2"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "node-q1_f"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "skill-b8135d",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-Question2",
+      "flow": "skills/choice-b8135d.flow.json",
+      "next": [
+        {
+          "caption": "User picked [yes]",
+          "condition": "temp['skill-choice-ret-vyditb8i76'] == \"yes\"",
+          "node": "choice-Question3"
+        },
+        {
+          "caption": "User picked [no]",
+          "condition": "temp['skill-choice-ret-vyditb8i76'] == \"no\"",
+          "node": "choice-Question3"
+        },
+        {
+          "caption": "User picked [a little]",
+          "condition": "temp['skill-choice-ret-vyditb8i76'] == \"a little\"",
+          "node": "choice-Question3"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "node-q2_f"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "skill-a0fa92",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-Question3",
+      "flow": "skills/choice-a0fa92.flow.json",
+      "next": [
+        {
+          "caption": "User picked [yes]",
+          "condition": "temp['skill-choice-ret-itepdz7bnf'] == \"yes\"",
+          "node": "choice-Question4"
+        },
+        {
+          "caption": "User picked [no]",
+          "condition": "temp['skill-choice-ret-itepdz7bnf'] == \"no\"",
+          "node": "choice-Question4"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "node-q3_f"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "skill-4346ab",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-Question4",
+      "flow": "skills/choice-4346ab.flow.json",
+      "next": [
+        {
+          "caption": "User picked [yes]",
+          "condition": "temp['skill-choice-ret-qz6kxptvks'] == \"yes\"",
+          "node": "node-eval-copy"
+        },
+        {
+          "caption": "User picked [no]",
+          "condition": "temp['skill-choice-ret-qz6kxptvks'] == \"no\"",
+          "node": "node-eval-copy"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "node-q4_f"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "35d7da9065",
+      "name": "node-Solution_3",
+      "next": [
+        {
+          "condition": "user['call'] == \"yes\"",
+          "node": "choice-0f6191"
+        },
+        {
+          "condition": "true",
+          "node": "node-fcb1"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-mM2W0w",
+        "say #!builtin_text-crgMyW"
+      ],
+      "onReceive": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"call\",\"value\":\"{{event.preview}}\"}"
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "fe1a68fdcc",
+      "name": "node-question5",
+      "next": [
+        {
+          "condition": "user['selection'] != \"None of the above\"",
+          "node": "choice-Is_this_normal1"
+        },
+        {
+          "condition": "true",
+          "node": "node-question6"
+        }
+      ],
+      "onEnter": [
+        "say #!dropdown-jQEQUv"
+      ],
+      "onReceive": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"selection\",\"value\":\"{{event.preview}}\"}",
+        "say #!builtin_text-s3fUTI"
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "1aef6df390",
+      "name": "node-q1_f",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-Question1"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-K8b9jW"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "18eea60ab8",
+      "name": "node-q2_f",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-Question2"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-K8b9jW"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "57ed13a7c5",
+      "name": "node-q3_f",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-Question3"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-K8b9jW"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "c99dc1459c",
+      "name": "node-q4_f",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-Question4"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-K8b9jW"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "1013fb5acc",
+      "name": "node-eval",
+      "next": [
+        {
+          "condition": "user['eval'] == 1",
+          "node": "node-Solution_3"
+        },
+        {
+          "condition": "user['eval'] == 2",
+          "node": "node-solution2"
+        },
+        {
+          "condition": "user['eval'] == 3",
+          "node": "node-Solution_1"
+        },
+        {
+          "condition": "true",
+          "node": "node-covidN"
+        }
+      ],
+      "onEnter": [
+        "builtin/resetGlobalVariable {\"name\":\"eval\"}",
+        "covid1 {}",
+        "say #!builtin_text-UzV6pr"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "3e92f8831e",
+      "name": "node-covidN",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-XDpg8D"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "cfa4168e5e",
+      "name": "node-other",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-76c7df"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "59390b870c",
+      "name": "node-end",
+      "next": [
+        {
+          "condition": "true",
+          "node": "node-email"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-xJE9ak",
+        "builtin/setVariable {\"type\":\"temp\",\"name\":\"in\",\"value\":\"{{temp.skill-choice-ret-oe965ebpcj'}}\"}",
+        "say #!builtin_text-NThKkm"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "dfb5a62668",
+      "name": "node-question6",
+      "next": [
+        {
+          "condition": "temp['correct'] == true",
+          "node": "node-healthbkg"
+        },
+        {
+          "condition": "true",
+          "node": "node-on_age_f"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-lF72YM"
+      ],
+      "onReceive": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"age\",\"value\":\"{{event.payload.text}}\"}",
+        "age_check {}"
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "b751f33fd4",
+      "name": "node-healthbkg",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-immune_system"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-lH-F6P"
+      ],
+      "onReceive": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"bkg\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "b42a357a4b",
+      "name": "node-on_age_f",
+      "next": [
+        {
+          "condition": "true",
+          "node": "node-question6"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-K8b9jW"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "ba4585f127",
+      "name": "node-on_fai",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-immune_system"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-K8b9jW"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-d475fe",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-immune_system",
+      "flow": "skills/choice-d475fe.flow.json",
+      "next": [
+        {
+          "caption": "User picked [treat]",
+          "condition": "temp['skill-choice-ret-gthqnld1ul'] == \"treat\"",
+          "node": "choice-covid_contact"
+        },
+        {
+          "caption": "User picked [conditi...]",
+          "condition": "temp['skill-choice-ret-gthqnld1ul'] == \"condition\"",
+          "node": "choice-covid_contact"
+        },
+        {
+          "caption": "User picked [chronic]",
+          "condition": "temp['skill-choice-ret-gthqnld1ul'] == \"chronic\"",
+          "node": "choice-covid_contact"
+        },
+        {
+          "caption": "User picked [regular]",
+          "condition": "temp['skill-choice-ret-gthqnld1ul'] == \"regular\"",
+          "node": "choice-covid_contact"
+        },
+        {
+          "caption": "User picked [none]",
+          "condition": "temp['skill-choice-ret-gthqnld1ul'] == \"none\"",
+          "node": "choice-covid_contact"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "node-on_fai"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "skill-6ec87a",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-covid_contact",
+      "flow": "skills/choice-6ec87a.flow.json",
+      "next": [
+        {
+          "caption": "User picked [yes]",
+          "condition": "temp['skill-choice-ret-kvfe5xvgwp'] == \"yes\"",
+          "node": "choice-contact_days"
+        },
+        {
+          "caption": "User picked [no]",
+          "condition": "temp['skill-choice-ret-kvfe5xvgwp'] == \"no\"",
+          "node": "node-eval"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "node-on_fail"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "skill-d55672",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-contact_days",
+      "flow": "skills/choice-d55672.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Today]",
+          "condition": "temp['skill-choice-ret-r2w6on0nye'] == \"Today\"",
+          "node": "node-eval"
+        },
+        {
+          "caption": "User picked [p_week]",
+          "condition": "temp['skill-choice-ret-r2w6on0nye'] == \"p_week\"",
+          "node": "node-eval"
+        },
+        {
+          "caption": "User picked [w_week]",
+          "condition": "temp['skill-choice-ret-r2w6on0nye'] == \"w_week\"",
+          "node": "node-eval"
+        },
+        {
+          "caption": "User picked [w2_week]",
+          "condition": "temp['skill-choice-ret-r2w6on0nye'] == \"w2_week\"",
+          "node": "node-eval"
+        },
+        {
+          "caption": "User picked [I_dont]",
+          "condition": "temp['skill-choice-ret-r2w6on0nye'] == \"I_dont\"",
+          "node": "node-eval"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "node-on_fail1"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "e296ba4de9",
+      "name": "node-on_fail",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-covid_contact"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-K8b9jW"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "e4731c4686",
+      "name": "node-on_fail1",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-contact_days"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-K8b9jW"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "aabb716686",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-confirmation",
+      "flow": "skills/choice-d55672.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Today]",
+          "condition": "temp['skill-choice-ret-r2w6on0nye'] == \"Today\"",
+          "node": "node-question6"
+        },
+        {
+          "caption": "User picked [p_week]",
+          "condition": "temp['skill-choice-ret-r2w6on0nye'] == \"p_week\"",
+          "node": "node-question6"
+        },
+        {
+          "caption": "User picked [w_week]",
+          "condition": "temp['skill-choice-ret-r2w6on0nye'] == \"w_week\"",
+          "node": "node-question6"
+        },
+        {
+          "caption": "User picked [w2_week]",
+          "condition": "temp['skill-choice-ret-r2w6on0nye'] == \"w2_week\"",
+          "node": "node-question6"
+        },
+        {
+          "caption": "User picked [I_dont]",
+          "condition": "temp['skill-choice-ret-r2w6on0nye'] == \"I_dont\"",
+          "node": "node-question6"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "node-on_fail2"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "16fa9e2514",
+      "name": "node-on_fail2",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-confirmation"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-K8b9jW"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "bbdca80d9c",
+      "name": "node-Solution_1",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-j529Rr"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "a062ff0a37",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-Is_this_normal1",
+      "flow": "skills/choice-1b6796.flow.json",
+      "next": [
+        {
+          "caption": "User picked [yes]",
+          "condition": "temp['skill-choice-ret-k4rxw9rv0f'] == \"yes\"",
+          "node": "node-question6"
+        },
+        {
+          "caption": "User picked [no]",
+          "condition": "temp['skill-choice-ret-k4rxw9rv0f'] == \"no\"",
+          "node": "choice-confirmation"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "6f347cf340",
+      "name": "node-solution2",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-76c7df"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-YBAc3e"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "88dc8e7f5e",
+      "name": "node-eval-copy",
+      "next": [
+        {
+          "condition": "user['eval'] == 1",
+          "node": "node-Solution_3"
+        },
+        {
+          "condition": "true",
+          "node": "node-question5"
+        }
+      ],
+      "onEnter": [
+        "builtin/resetGlobalVariable {\"name\":\"eval\"}",
+        "covid {}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-5ded48",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-5ded48",
+      "flow": "skills/choice-5ded48.flow.json",
+      "next": [
+        {
+          "caption": "User picked [mor]",
+          "condition": "temp['skill-choice-ret-oe965ebpcj'] == \"mor\"",
+          "node": "choice-select"
+        },
+        {
+          "caption": "User picked [mor1]",
+          "condition": "temp['skill-choice-ret-oe965ebpcj'] == \"mor1\"",
+          "node": "choice-select"
+        },
+        {
+          "caption": "User picked [af]",
+          "condition": "temp['skill-choice-ret-oe965ebpcj'] == \"af\"",
+          "node": "choice-select"
+        },
+        {
+          "caption": "User picked [af1]",
+          "condition": "temp['skill-choice-ret-oe965ebpcj'] == \"af1\"",
+          "node": "choice-select"
+        },
+        {
+          "caption": "User picked [ev]",
+          "condition": "temp['skill-choice-ret-oe965ebpcj'] == \"ev\"",
+          "node": "choice-select"
+        },
+        {
+          "caption": "User picked [ev1]",
+          "condition": "temp['skill-choice-ret-oe965ebpcj'] == \"ev1\"",
+          "node": "choice-select"
+        },
+        {
+          "caption": "User picked [ng]",
+          "condition": "temp['skill-choice-ret-oe965ebpcj'] == \"ng\"",
+          "node": "choice-select"
+        },
+        {
+          "caption": "User picked [emergen...]",
+          "condition": "temp['skill-choice-ret-oe965ebpcj'] == \"emergency\"",
+          "node": "choice-select"
+        },
+        {
+          "caption": "User picked [call]",
+          "condition": "temp['skill-choice-ret-oe965ebpcj'] == \"call\"",
+          "node": "choice-select"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "choice-select"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "76dc642693",
+      "name": "node-fcb1",
+      "next": [
+        {
+          "condition": "true",
+          "node": "END"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-A4Zvp6"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-30a079",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-select",
+      "flow": "skills/choice-30a079.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Regina ...]",
+          "condition": "temp['skill-choice-ret-99a4xzzxym'] == \"Regina Drive-Thru Testing Site\"",
+          "node": "node-decision"
+        },
+        {
+          "caption": "User picked [Prince ...]",
+          "condition": "temp['skill-choice-ret-99a4xzzxym'] == \"Prince Albert Drive-Thru Testing Site\"",
+          "node": "node-decision"
+        },
+        {
+          "caption": "User picked [Saskato...]",
+          "condition": "temp['skill-choice-ret-99a4xzzxym'] == \"Saskatoon Drive-Thru Testing Site\"",
+          "node": "node-decision"
+        },
+        {
+          "caption": "User picked [Yorkton...]",
+          "condition": "temp['skill-choice-ret-99a4xzzxym'] == \"Yorkton Drive-Thru Testing Site\"",
+          "node": "node-decision"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "node-decision"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "0ea4c9835a",
+      "name": "node-decision",
+      "next": [
+        {
+          "condition": "temp['book'] == 1",
+          "node": "node-end"
+        },
+        {
+          "condition": "true",
+          "node": "node-failmessage"
+        }
+      ],
+      "onEnter": [
+        "covid-test-appoint {}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "fec6980fab",
+      "name": "node-failmessage",
+      "next": [
+        {
+          "condition": "true",
+          "node": "END"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-pMQpnD"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-0f6191",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-0f6191",
+      "flow": "skills/choice-0f6191.flow.json",
+      "next": [
+        {
+          "caption": "User picked [March 2...]",
+          "condition": "temp['skill-choice-ret-f88zr5ovcs'] == \"March 25 2021\"",
+          "node": "choice-5ded48"
+        },
+        {
+          "caption": "User picked [March 2...]",
+          "condition": "temp['skill-choice-ret-f88zr5ovcs'] == \"March 26 2021\"",
+          "node": "choice-5ded48"
+        },
+        {
+          "caption": "User picked [March 2...]",
+          "condition": "temp['skill-choice-ret-f88zr5ovcs'] == \"March 27 2021\"",
+          "node": "choice-5ded48"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "choice-5ded48"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "fc6a6d6057",
+      "name": "node-email",
+      "next": [
+        {
+          "condition": "user['eval'] == 1",
+          "node": "node-sendemail"
+        },
+        {
+          "condition": "true",
+          "node": "node-60b1"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-XTK8Op"
+      ],
+      "onReceive": [
+        "validate_email {\"name\":\"email\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "cea0fcfd63",
+      "name": "node-sendemail",
+      "next": [
+        {
+          "condition": "true",
+          "node": "END"
+        }
+      ],
+      "onEnter": [
+        "send_email {\"name\":\"email\",\"value\":\"{{event.payload.text}}\"}",
+        "say #!builtin_text-UdZ2C9"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "8b0f620412",
+      "name": "node-60b1",
+      "next": [
+        {
+          "condition": "true",
+          "node": "node-email"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-76c7df",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-76c7df",
+      "flow": "skills/choice-76c7df.flow.json",
+      "next": [
+        {
+          "caption": "User picked [yes]",
+          "condition": "temp['skill-choice-ret-mt9ikfkgit'] == \"yes\"",
+          "node": "choice-5ded48"
+        },
+        {
+          "caption": "User picked [no]",
+          "condition": "temp['skill-choice-ret-mt9ikfkgit'] == \"no\"",
+          "node": "node-fcb1"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "node-other"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    }
+  ]
+}

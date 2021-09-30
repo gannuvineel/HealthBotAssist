@@ -1,0 +1,100 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "next": []
+  },
+  "startNode": "entry",
+  "skillData": {
+    "randomId": "99a4xzzxym",
+    "contentId": "builtin_single-choice-xjw4na",
+    "invalidContentId": "",
+    "keywords": {
+      "Regina Drive-Thru Testing Site": [
+        "Regina Drive-Thru Testing Site"
+      ],
+      "Prince Albert Drive-Thru Testing Site": [
+        "Prince Albert Drive-Thru Testing Site"
+      ],
+      "Saskatoon Drive-Thru Testing Site": [
+        "Saskatoon Drive-Thru Testing Site"
+      ],
+      "Yorkton Drive-Thru Testing Site": [
+        "Yorkton Drive-Thru Testing Site"
+      ]
+    },
+    "config": {
+      "nbMaxRetries": 3,
+      "repeatChoicesOnInvalid": false
+    }
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_single-choice-xjw4na {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "797644"
+    },
+    {
+      "name": "parse",
+      "onReceive": [
+        "basic-skills/choice_parse_answer {\"randomId\":\"99a4xzzxym\",\"contentId\":\"builtin_single-choice-xjw4na\",\"invalidContentId\":\"\",\"keywords\":{\"Regina Drive-Thru Testing Site\":[\"Regina Drive-Thru Testing Site\"],\"Prince Albert Drive-Thru Testing Site\":[\"Prince Albert Drive-Thru Testing Site\"],\"Saskatoon Drive-Thru Testing Site\":[\"Saskatoon Drive-Thru Testing Site\"],\"Yorkton Drive-Thru Testing Site\":[\"Yorkton Drive-Thru Testing Site\"]},\"config\":{\"nbMaxRetries\":3,\"repeatChoicesOnInvalid\":false}}"
+      ],
+      "next": [
+        {
+          "condition": "temp['skill-choice-valid-99a4xzzxym'] === true",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "invalid"
+        }
+      ],
+      "triggers": [
+        {
+          "conditions": [
+            {
+              "id": "always"
+            }
+          ]
+        }
+      ],
+      "onEnter": [],
+      "id": "486508"
+    },
+    {
+      "name": "invalid",
+      "onEnter": [
+        "basic-skills/choice_invalid_answer {\"randomId\":\"99a4xzzxym\"}"
+      ],
+      "next": [
+        {
+          "condition": "Number(temp['skill-choice-invalid-count-99a4xzzxym']) > Number(3)",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "sorry"
+        }
+      ],
+      "id": "426887"
+    },
+    {
+      "name": "sorry",
+      "onEnter": [],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "630382"
+    }
+  ]
+}

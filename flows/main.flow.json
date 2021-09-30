@@ -1,0 +1,125 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "onReceive": [],
+    "next": []
+  },
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "7397fc9cc3",
+      "name": "node-2394",
+      "next": [
+        {
+          "condition": "true",
+          "node": "entry"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-KG3FUC"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "5c249b4734",
+      "name": "node-ff49",
+      "next": [
+        {
+          "condition": "event.nlu.intent.name === 'covid'",
+          "node": "covid.flow.json"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'headache'",
+          "node": "headache.flow.json"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'cancer'",
+          "node": "cancer.flow.json"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-usIIOm"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "4179d7c4f4",
+      "name": "node-1d5b",
+      "next": [
+        {
+          "condition": "event.nlu.intent.name === 'hey'",
+          "node": "#"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'covid'",
+          "node": "covid.flow.json"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'headache'",
+          "node": "headache.flow.json"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'cancer'",
+          "node": "cancer.flow.json"
+        },
+        {
+          "condition": "true",
+          "node": "entry"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-hK34Sa"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    },
+    {
+      "id": "ae0198c043",
+      "name": "node-message",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-OGSD_p"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "entry",
+      "name": "entry",
+      "next": [
+        {
+          "condition": "event.nlu.intent.name === 'hey'",
+          "node": "node-1d5b"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'covid'",
+          "node": "node-ff49"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'headache'",
+          "node": "node-ff49"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'cancer'",
+          "node": "node-ff49"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'good'",
+          "node": "node-message"
+        },
+        {
+          "condition": "true",
+          "node": "node-2394"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-hef76J"
+      ],
+      "onReceive": [
+        "builtin/setVariable {\"type\":\"temp\",\"name\":\"input\",\"value\":\"{{event.preview}}\"}"
+      ]
+    }
+  ]
+}

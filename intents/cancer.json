@@ -1,0 +1,30 @@
+{
+  "name": "cancer",
+  "utterances": {
+    "en": [
+      "cancer",
+      "I feel like I have [cancer](cancer)",
+      "I need a [cancer](cancer) remedy",
+      "Help me to find a [medicine for cancer](cancer)",
+      "Which medicine is preferable for [cancer](cancer)",
+      "medicine for [cancer](cancer)",
+      "Feeling like to have [cancer](cancer)",
+      "Can you tell me if I have [cancer](cancer)",
+      "Tell me if I have [cancer](cancer)",
+      "[cancer](cancer)"
+    ]
+  },
+  "slots": [
+    {
+      "id": "gpL49eOZ-ogXqo_PneHLY",
+      "name": "cancer",
+      "entities": [
+        "cancer"
+      ],
+      "color": 1
+    }
+  ],
+  "contexts": [
+    "global"
+  ]
+}

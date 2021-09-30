@@ -1,0 +1,107 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "next": []
+  },
+  "startNode": "entry",
+  "skillData": {
+    "randomId": "gthqnld1ul",
+    "contentId": "builtin_single-choice-556yCX",
+    "invalidContentId": "",
+    "keywords": {
+      "treat": [
+        "treat",
+        "treatment that weakens your immune system"
+      ],
+      "condition": [
+        "condition",
+        "condition that weakens your immune system, for ex. lupus, rheumatoid arthritis, immunodeficiency disorder"
+      ],
+      "chronic": [
+        "chronic",
+        "chronic long-lasting health condition, for ex. diabetes, emphysema, asthma, heart condition, COPD"
+      ],
+      "regular": [
+        "regular",
+        "Regularly going to a hospital for a treatment, for ex. dialysis, surgery, cancer treatment"
+      ],
+      "none": [
+        "none"
+      ]
+    },
+    "config": {
+      "nbMaxRetries": 3,
+      "repeatChoicesOnInvalid": false
+    }
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_single-choice-556yCX {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "378215"
+    },
+    {
+      "name": "parse",
+      "onReceive": [
+        "basic-skills/choice_parse_answer {\"randomId\":\"gthqnld1ul\",\"contentId\":\"builtin_single-choice-556yCX\",\"invalidContentId\":\"\",\"keywords\":{\"treat\":[\"treat\",\"treatment that weakens your immune system\"],\"condition\":[\"condition\",\"condition that weakens your immune system, for ex. lupus, rheumatoid arthritis, immunodeficiency disorder\"],\"chronic\":[\"chronic\",\"chronic long-lasting health condition, for ex. diabetes, emphysema, asthma, heart condition, COPD\"],\"regular\":[\"regular\",\"Regularly going to a hospital for a treatment, for ex. dialysis, surgery, cancer treatment\"],\"none\":[\"none\"]},\"config\":{\"nbMaxRetries\":3,\"repeatChoicesOnInvalid\":false}}"
+      ],
+      "next": [
+        {
+          "condition": "temp['skill-choice-valid-gthqnld1ul'] === true",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "invalid"
+        }
+      ],
+      "triggers": [
+        {
+          "conditions": [
+            {
+              "id": "always"
+            }
+          ]
+        }
+      ],
+      "onEnter": [],
+      "id": "039604"
+    },
+    {
+      "name": "invalid",
+      "onEnter": [
+        "basic-skills/choice_invalid_answer {\"randomId\":\"gthqnld1ul\"}"
+      ],
+      "next": [
+        {
+          "condition": "Number(temp['skill-choice-invalid-count-gthqnld1ul']) > Number(3)",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "sorry"
+        }
+      ],
+      "id": "616983"
+    },
+    {
+      "name": "sorry",
+      "onEnter": [],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "043353"
+    }
+  ]
+}

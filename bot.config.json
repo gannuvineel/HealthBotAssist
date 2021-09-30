@@ -1,0 +1,53 @@
+{
+  "locked": false,
+  "disabled": false,
+  "private": false,
+  "details": {
+    "website": "",
+    "phoneNumber": "",
+    "emailAddress": "",
+    "termsConditions": "",
+    "privacyPolicy": "",
+    "avatarUrl": "/api/v1/bots/healthbota_latest/media/ccx0afqe2ypp7w1l45h6-Bot_avatar.jpg",
+    "coverPictureUrl": "/api/v1/bots/healthbota_latest/media/y66xhifpbcpn9rckw7s8-Bot_avatar.jpg"
+  },
+  "$schema": "../../bot.config.schema.json",
+  "description": "",
+  "active": true,
+  "version": "12.16.2",
+  "author": "Botpress, Inc.",
+  "license": "AGPL-3.0",
+  "imports": {
+    "modules": [],
+    "incomingMiddleware": [],
+    "outgoingMiddleware": [],
+    "contentTypes": [
+      "builtin_action-button",
+      "builtin_card",
+      "builtin_carousel",
+      "builtin_image",
+      "builtin_single-choice",
+      "builtin_text",
+      "dropdown"
+    ]
+  },
+  "dialog": {
+    "timeoutInterval": "5m"
+  },
+  "logs": {
+    "expiration": "1 week"
+  },
+  "defaultLanguage": "en",
+  "languages": [
+    "en"
+  ],
+  "id": "healthbota_latest",
+  "name": "healthbotA (healthbota) (healthbota_latest)",
+  "pipeline_status": {
+    "current_stage": {
+      "id": "prod",
+      "promoted_on": "2021-03-22T22:50:00.471Z",
+      "promoted_by": "system"
+    }
+  }
+}

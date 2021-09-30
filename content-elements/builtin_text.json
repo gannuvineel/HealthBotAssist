@@ -1,0 +1,476 @@
+[
+  {
+    "id": "builtin_text-hef76J",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Hey there, how are you feeling today?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-16T12:46:30.290Z",
+    "modifiedOn": "2021-03-16T12:46:51.140Z"
+  },
+  {
+    "id": "builtin_text-hK34Sa",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Hey!! How are you feeling? I can assist you."
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-16T13:32:46.533Z",
+    "modifiedOn": "2021-03-16T13:32:46.533Z"
+  },
+  {
+    "id": "builtin_text-KG3FUC",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "I did not get it. I am HealthBot. I am there to assist you healthwise."
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-16T13:40:03.703Z",
+    "modifiedOn": "2021-03-16T13:40:03.703Z"
+  },
+  {
+    "id": "builtin_text-usIIOm",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Okay, tell me more about the symptoms.\n"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-16T13:43:35.257Z",
+    "modifiedOn": "2021-03-21T18:13:15.765Z"
+  },
+  {
+    "id": "builtin_text-TPFdmh",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Are you currently experiencing difficulty in breathing (struggling for each breath, can only speak in single words)?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-16T14:06:48.996Z",
+    "modifiedOn": "2021-03-16T14:06:48.996Z"
+  },
+  {
+    "id": "builtin_text-mM2W0w",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Yes, these are primary symptoms of covid. Based on your severity, I would suggest please call 911 or go directly to your nearest emergency department."
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-17T00:17:16.743Z",
+    "modifiedOn": "2021-03-18T17:40:30.772Z"
+  },
+  {
+    "id": "builtin_text-UzV6pr",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Hello, I evaluated your covid symtoms as {{user.eval}}"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-17T12:08:18.442Z",
+    "modifiedOn": "2021-03-17T16:51:45.466Z"
+  },
+  {
+    "id": "builtin_text-XDpg8D",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "As per symptoms, you probably don't have covid. Here are some recommendation: Stay home, stay healthy!!"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-17T14:22:12.338Z",
+    "modifiedOn": "2021-03-24T20:58:53.349Z"
+  },
+  {
+    "id": "builtin_text-s3fUTI",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "you have selected : {{user.selection}}"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-17T15:27:42.082Z",
+    "modifiedOn": "2021-03-17T16:30:24.380Z"
+  },
+  {
+    "id": "builtin_text-sI06X4",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Okay calling, please take care!!!!"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-17T16:14:53.045Z",
+    "modifiedOn": "2021-03-18T17:47:33.364Z"
+  },
+  {
+    "id": "builtin_text-lF72YM",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Please enter your age"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-18T05:33:20.768Z",
+    "modifiedOn": "2021-03-18T16:17:13.317Z"
+  },
+  {
+    "id": "builtin_text-apaInV",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Are your symptoms normal for you (related to a medical condition you already have)?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-18T13:23:02.980Z",
+    "modifiedOn": "2021-03-18T13:23:02.980Z"
+  },
+  {
+    "id": "builtin_text-K8b9jW",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Please select a correct option."
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-18T13:33:03.743Z",
+    "modifiedOn": "2021-03-18T13:33:03.743Z"
+  },
+  {
+    "id": "builtin_text-kQraDn",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "{{temp.v}}"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-18T16:13:33.683Z",
+    "modifiedOn": "2021-03-18T16:13:33.683Z"
+  },
+  {
+    "id": "builtin_text-lH-F6P",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Please enter yes and state any disease if you have medical history."
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-18T16:23:16.271Z",
+    "modifiedOn": "2021-03-18T16:23:16.271Z"
+  },
+  {
+    "id": "builtin_text-CkHD3v",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Did these symptoms start today??"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-18T16:39:25.004Z",
+    "modifiedOn": "2021-03-18T16:39:25.004Z"
+  },
+  {
+    "id": "builtin_text-j529Rr",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Stay home\nMonitor your health\nFace coverings and masks\nTake preliminary medicines for the symptoms"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-18T16:49:29.708Z",
+    "modifiedOn": "2021-03-24T20:55:09.439Z"
+  },
+  {
+    "id": "builtin_text-YBAc3e",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Get tested\nExcept for testing, stay home\nTell people you have been in close physical contact with\nMonitor your health"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-18T17:38:43.209Z",
+    "modifiedOn": "2021-03-24T20:57:23.977Z"
+  },
+  {
+    "id": "builtin_text-crgMyW",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Do you want me to book an appointment with doctor?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-18T17:41:21.576Z",
+    "modifiedOn": "2021-03-24T20:25:22.585Z"
+  },
+  {
+    "id": "builtin_text-Oa7J2o",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "How long have you been feeling headache?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-18T21:58:14.700Z",
+    "modifiedOn": "2021-03-18T21:58:14.700Z"
+  },
+  {
+    "id": "builtin_text-VVsbky",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "I feel you have migrane. \nyou can take Imitrex to treat up to four migraine or cluster headaches a month or sumatriptan.\nYou might want to stay in a quiet and dark room, and relax. "
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-18T22:14:11.733Z",
+    "modifiedOn": "2021-03-19T16:41:33.186Z"
+  },
+  {
+    "id": "builtin_text-p8_uy3",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "It could be migrane. Are you experiencing this first time? "
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-19T00:18:50.179Z",
+    "modifiedOn": "2021-03-19T00:18:50.179Z"
+  },
+  {
+    "id": "builtin_text-40r3jA",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Headache might be due to dehydration.\nMassage\nStay hydrated drink water\nElectrolyte drinks, like  Pedialyte and Powerade \nOTC pain relievers(ibuprofen (Advil, Motrin IB), \naspirin (Bufferin), and\nacetaminophen (Tylenol))"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-19T00:23:43.981Z",
+    "modifiedOn": "2021-03-19T00:23:43.981Z"
+  },
+  {
+    "id": "builtin_text-K7XSFI",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Stay in a dark and quiet Room\nPerform breathing exercises\nStay hydrated\nTake proper sleep\nSip soothing teas\nExercise or do yoga daily!!"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-19T00:31:01.379Z",
+    "modifiedOn": "2021-03-22T22:59:59.609Z"
+  },
+  {
+    "id": "builtin_text-M6dCnj",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Did you get injured on your head?",
+      "variations$en": []
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-19T15:32:05.772Z",
+    "modifiedOn": "2021-03-19T15:33:31.991Z"
+  },
+  {
+    "id": "builtin_text-OkJMOb",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "You must see a doctor. Do you want to me to book an appointment with a doctor today?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-19T15:35:41.658Z",
+    "modifiedOn": "2021-03-24T14:06:20.961Z"
+  },
+  {
+    "id": "builtin_text--DWY-6",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "You might have minor migrane issue."
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-19T16:38:54.074Z",
+    "modifiedOn": "2021-03-19T16:38:54.074Z"
+  },
+  {
+    "id": "builtin_text-cb_Hb-",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Hello, I evaluated your covid symptoms as {{user.eval}}"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-21T22:15:32.788Z",
+    "modifiedOn": "2021-03-21T22:15:32.788Z"
+  },
+  {
+    "id": "builtin_text-rTWZUc",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Get tested\nExcept for testing, don't use tobacco\nProtect yourself from the sun\nAvoid risky behaviors"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-22T04:17:34.877Z",
+    "modifiedOn": "2021-03-22T04:17:34.877Z"
+  },
+  {
+    "id": "builtin_text-BmmIVC",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Get tested\nExcept for testing, don't use tobacco\nEat a healthy diet\nMaintain a healthy weight and be physically active\nAvoid risky behaviors"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-22T04:18:42.807Z",
+    "modifiedOn": "2021-03-22T04:18:42.807Z"
+  },
+  {
+    "id": "builtin_text-Obqtq0",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Yes, these are primary symptoms of cancer. Based on your severity, I would suggest please call 811 or go directly to your nearest emergency department."
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-22T04:19:46.215Z",
+    "modifiedOn": "2021-03-22T04:19:46.215Z"
+  },
+  {
+    "id": "builtin_text-WvZfHO",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Do you want me to call 811?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-22T04:20:15.392Z",
+    "modifiedOn": "2021-03-22T04:20:15.392Z"
+  },
+  {
+    "id": "builtin_text-I6k403",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "As per symptoms, you probably have cancer. Here are some recommendation: Stay healthy, have healthy diet, stay fit!!"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-22T04:24:04.514Z",
+    "modifiedOn": "2021-03-22T04:24:04.514Z"
+  },
+  {
+    "id": "builtin_text-ZugT1Y",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "<a href=“https://youtu.be/QFkAl5wHEbg”> You can check out the yoga here</a>\n"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-23T00:37:40.925Z",
+    "modifiedOn": "2021-03-23T00:38:37.003Z"
+  },
+  {
+    "id": "builtin_text-RWAlK-",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "What's your preferred timing?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-24T14:08:20.362Z",
+    "modifiedOn": "2021-03-24T14:08:20.362Z"
+  },
+  {
+    "id": "builtin_text-Okubxr",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "appointment with {{user.doctor}} is fixed on {{user.date}} at {{user.time}}, location : {{user.location}} and consultant charge is {{temp.fees}}"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-24T15:11:12.350Z",
+    "modifiedOn": "2021-03-24T21:28:59.503Z"
+  },
+  {
+    "id": "builtin_text-OGSD_p",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "That's good to know.. Please take care!"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-24T15:19:30.257Z",
+    "modifiedOn": "2021-03-24T15:19:30.257Z"
+  },
+  {
+    "id": "builtin_text-xJE9ak",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Booking an appointment... please wait."
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-24T16:26:45.098Z",
+    "modifiedOn": "2021-03-24T20:26:28.966Z"
+  },
+  {
+    "id": "builtin_text-NThKkm",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "okay, booked an appointment on {{user.date}} at {{user.time}}. Please go to {{user.location}} at the booked time. Please use a face mask."
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-24T16:30:51.832Z",
+    "modifiedOn": "2021-03-24T20:27:21.199Z"
+  },
+  {
+    "id": "builtin_text-A4Zvp6",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "okay, please make a call to 811 and take precautions."
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-24T16:42:56.930Z",
+    "modifiedOn": "2021-03-24T16:42:56.930Z"
+  },
+  {
+    "id": "builtin_text-pMQpnD",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Could not book an appointment at your preferred location. Center is not open at your preferred time. Please contact 811 as soon as possible and get tested. Take care!"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-24T17:24:13.451Z",
+    "modifiedOn": "2021-03-24T21:12:55.479Z"
+  },
+  {
+    "id": "builtin_text-XTK8Op",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Please enter a valid email address to send you the booking details."
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-24T20:00:20.749Z",
+    "modifiedOn": "2021-03-24T20:27:48.517Z"
+  },
+  {
+    "id": "builtin_text-UdZ2C9",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Booking confirmation has been sent successfully."
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-24T20:13:33.302Z",
+    "modifiedOn": "2021-03-24T20:13:33.302Z"
+  }
+]

@@ -1,0 +1,103 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "next": []
+  },
+  "startNode": "entry",
+  "skillData": {
+    "randomId": "73nuj1g5mw",
+    "contentId": "builtin_single-choice-FhLFXB",
+    "invalidContentId": "",
+    "keywords": {
+      "Today": [
+        "Today"
+      ],
+      "p_week": [
+        "p_week",
+        "In the past week(2-6 days)"
+      ],
+      "w_week": [
+        "w_week",
+        "More than a week ago(7 - 11 days ago)"
+      ],
+      "w2_week": [
+        "w2_week",
+        "About 2 weeks ago(12 - 14 days ago)"
+      ]
+    },
+    "config": {
+      "nbMaxRetries": 3,
+      "repeatChoicesOnInvalid": false
+    }
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_single-choice-FhLFXB {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "722129"
+    },
+    {
+      "name": "parse",
+      "onReceive": [
+        "basic-skills/choice_parse_answer {\"randomId\":\"73nuj1g5mw\",\"contentId\":\"builtin_single-choice-FhLFXB\",\"invalidContentId\":\"\",\"keywords\":{\"Today\":[\"Today\"],\"p_week\":[\"p_week\",\"In the past week(2-6 days)\"],\"w_week\":[\"w_week\",\"More than a week ago(7 - 11 days ago)\"],\"w2_week\":[\"w2_week\",\"About 2 weeks ago(12 - 14 days ago)\"]},\"config\":{\"nbMaxRetries\":3,\"repeatChoicesOnInvalid\":false}}"
+      ],
+      "next": [
+        {
+          "condition": "temp['skill-choice-valid-73nuj1g5mw'] === true",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "invalid"
+        }
+      ],
+      "triggers": [
+        {
+          "conditions": [
+            {
+              "id": "always"
+            }
+          ]
+        }
+      ],
+      "onEnter": [],
+      "id": "493863"
+    },
+    {
+      "name": "invalid",
+      "onEnter": [
+        "basic-skills/choice_invalid_answer {\"randomId\":\"73nuj1g5mw\"}"
+      ],
+      "next": [
+        {
+          "condition": "Number(temp['skill-choice-invalid-count-73nuj1g5mw']) > Number(3)",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "sorry"
+        }
+      ],
+      "id": "139174"
+    },
+    {
+      "name": "sorry",
+      "onEnter": [],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "103907"
+    }
+  ]
+}

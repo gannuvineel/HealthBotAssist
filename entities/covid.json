@@ -1,0 +1,13 @@
+{
+  "id": "covid",
+  "name": "covid",
+  "type": "pattern",
+  "occurrences": [],
+  "sensitive": false,
+  "fuzzy": 0.8,
+  "examples": [
+    "covid"
+  ],
+  "pattern": "covid",
+  "matchCase": false
+}

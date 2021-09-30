@@ -1,0 +1,147 @@
+{
+  "steps": [
+    {
+      "userMessage": "hey",
+      "botReplies": [
+        {
+          "botResponse": "#!builtin_text-hef76J",
+          "replySource": "dialogManager"
+        }
+      ]
+    },
+    {
+      "userMessage": "I am having covid, Ifeel",
+      "botReplies": [
+        {
+          "botResponse": "#!builtin_text-usIIOm",
+          "replySource": "dialogManager"
+        },
+        {
+          "botResponse": "#!builtin_single-choice-ism9nF",
+          "replySource": "dialogManager"
+        }
+      ]
+    },
+    {
+      "userMessage": "yes",
+      "botReplies": [
+        {
+          "botResponse": "#!builtin_single-choice--Wdr01",
+          "replySource": "dialogManager"
+        }
+      ]
+    },
+    {
+      "userMessage": "yes",
+      "botReplies": [
+        {
+          "botResponse": "#!builtin_single-choice-DkMUib",
+          "replySource": "dialogManager"
+        }
+      ]
+    },
+    {
+      "userMessage": "yes",
+      "botReplies": [
+        {
+          "botResponse": "#!builtin_single-choice-g9u-sM",
+          "replySource": "dialogManager"
+        }
+      ]
+    },
+    {
+      "userMessage": "no",
+      "botReplies": [
+        {
+          "botResponse": "#!dropdown-jQEQUv",
+          "replySource": "dialogManager"
+        }
+      ]
+    },
+    {
+      "userMessage": "Fever and/or chills,Headache,Digestive issues like nausea/vomiting, diarrhea, stomach pain,Muscle aches,Extreme tiredness,Cough or barking cough (croup)",
+      "botReplies": [
+        {
+          "botResponse": "#!builtin_text-UzV6pr",
+          "replySource": "dialogManager"
+        }
+      ]
+    }
+  ],
+  "initialState": {
+    "__stacktrace": [],
+    "user": {
+      "timezone": 6,
+      "language": "en",
+      "selection": "Runny or stuffy&#x2F;congested nose&#x2F;Sore throat,Fever and&#x2F;or chills,Extreme tiredness,Muscle aches,Cough or barking cough (croup)",
+      "q1": "1",
+      "q2": "1",
+      "q3": "1",
+      "q4": "0",
+      "eval": "Hello"
+    },
+    "context": {},
+    "session": {
+      "workflows": {},
+      "slots": {}
+    },
+    "temp": {}
+  },
+  "finalState": {
+    "__stacktrace": [
+      {
+        "flow": "covid.flow.json",
+        "node": "node-eval"
+      },
+      {
+        "flow": "error.flow.json",
+        "node": "entry"
+      }
+    ],
+    "user": {
+      "timezone": 6,
+      "language": "en",
+      "selection": "Fever and&#x2F;or chills,Headache,Digestive issues like nausea&#x2F;vomiting, diarrhea, stomach pain,Muscle aches,Extreme tiredness,Cough or barking cough (croup)",
+      "q1": "1",
+      "q2": "1",
+      "q3": "1",
+      "q4": "0",
+      "eval": "Hello"
+    },
+    "context": {},
+    "session": {
+      "workflows": {},
+      "slots": {
+        "notFound": 0,
+        "covid": {
+          "start": 12,
+          "end": 17,
+          "confidence": 0.8402953600550466,
+          "name": "covid",
+          "source": "covid",
+          "value": "covid",
+          "entity": {
+            "name": "covid",
+            "type": "custom.pattern.covid",
+            "data": {
+              "unit": "",
+              "value": "covid"
+            },
+            "meta": {
+              "sensitive": false,
+              "confidence": 1,
+              "end": 17,
+              "source": "covid",
+              "start": 12
+            }
+          },
+          "timestamp": 1615991610998,
+          "turns": 5,
+          "overwritable": true,
+          "expiresAfterTurns": false
+        }
+      }
+    },
+    "temp": {}
+  }
+}

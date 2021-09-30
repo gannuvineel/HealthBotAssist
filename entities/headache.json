@@ -1,0 +1,13 @@
+{
+  "id": "headache",
+  "name": "headache",
+  "type": "pattern",
+  "occurrences": [],
+  "sensitive": false,
+  "fuzzy": 0.8,
+  "examples": [
+    "headache"
+  ],
+  "pattern": "headache",
+  "matchCase": false
+}

@@ -1,0 +1,24 @@
+{
+  "name": "hey",
+  "utterances": {
+    "en": [
+      "Hey",
+      "Hey, [how are you doing](hey)?",
+      "I am [not feeling well](hey).",
+      "[not good](hey)."
+    ]
+  },
+  "slots": [
+    {
+      "id": "yI_8DwmYQpXcw42JsAdIN",
+      "name": "hey",
+      "entities": [
+        "greetings"
+      ],
+      "color": 1
+    }
+  ],
+  "contexts": [
+    "global"
+  ]
+}

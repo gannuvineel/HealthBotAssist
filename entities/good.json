@@ -1,0 +1,13 @@
+{
+  "id": "good",
+  "name": "good",
+  "type": "pattern",
+  "occurrences": [],
+  "sensitive": false,
+  "fuzzy": 0.8,
+  "examples": [
+    "good"
+  ],
+  "pattern": "good",
+  "matchCase": false
+}

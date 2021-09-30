@@ -1,0 +1,13 @@
+{
+  "id": "cancer",
+  "name": "cancer",
+  "type": "pattern",
+  "occurrences": [],
+  "sensitive": false,
+  "fuzzy": 0.8,
+  "examples": [
+    "cancer"
+  ],
+  "pattern": "cancer",
+  "matchCase": false
+}

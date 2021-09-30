@@ -1,0 +1,30 @@
+{
+  "name": "covid",
+  "utterances": {
+    "en": [
+      "Covid",
+      "I feel like I have [covid](covid)",
+      "I need [covid](covid) remedy",
+      "covid",
+      "Help me to find a [medicine for covid](covid)",
+      "Which medicine is preferable for [covid](covid)",
+      "medicine for [covid](covid)",
+      "Feeling like to have [covid](covid)",
+      "Can you tell me [if I have covid](covid)",
+      "tell me if I have [covid](covid)"
+    ]
+  },
+  "slots": [
+    {
+      "id": "LvKB3eH0J72lgCVgRILjU",
+      "name": "covid",
+      "entities": [
+        "covid"
+      ],
+      "color": 1
+    }
+  ],
+  "contexts": [
+    "global"
+  ]
+}

@@ -1,0 +1,195 @@
+[
+  {
+    "id": "dropdown-jQEQUv",
+    "formData": {
+      "buttonText$en": "Are you currently experiencing any of these symptoms?",
+      "placeholderText$en": "Select that applies:",
+      "width$en": 200,
+      "displayInKeyboard$en": true,
+      "markdown$en": true,
+      "typing$en": true,
+      "options$en": [
+        {
+          "label": "Fever and chills",
+          "value": "Fever"
+        },
+        {
+          "label": "Cough or barking cough",
+          "value": "Cough"
+        },
+        {
+          "label": "Difficulty swallowing",
+          "value": "Difficult_swallo"
+        },
+        {
+          "label": "Runny or stuffy or congested nose or Sore throat",
+          "value": "nose_throat"
+        },
+        {
+          "value": "Decrease_of_smell",
+          "label": "Decrease or loss of taste or smell"
+        },
+        {
+          "value": "Headache",
+          "label": "Headache"
+        },
+        {
+          "value": "Digestive issues like nausea/vomiting, diarrhea, stomach_pain",
+          "label": "Digestive issues like nausea/vomiting, diarrhea, stomach pain"
+        },
+        {
+          "value": "Muscle_aches",
+          "label": "Muscle aches"
+        },
+        {
+          "value": "Extreme_tiredness",
+          "label": "Extreme tiredness"
+        },
+        {
+          "value": "none",
+          "label": "None of the above"
+        }
+      ],
+      "allowMultiple$en": true,
+      "message$en": "Are you currently experiencing any of these symptoms?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-17T04:40:33.274Z",
+    "modifiedOn": "2021-03-17T15:33:56.924Z"
+  },
+  {
+    "id": "dropdown-_e0xNS",
+    "formData": {
+      "buttonText$en": "symptoms",
+      "placeholderText$en": "Select a choice",
+      "width$en": 200,
+      "displayInKeyboard$en": true,
+      "markdown$en": true,
+      "typing$en": true,
+      "message$en": "Are you experiencing any of the below symptoms?",
+      "options$en": [
+        {
+          "label": "dry or sticky mouth",
+          "value": "dry"
+        },
+        {
+          "label": "thirst",
+          "value": "thirst"
+        },
+        {
+          "label": "not urinating much",
+          "value": "urin"
+        },
+        {
+          "label": "darker yellow urine",
+          "value": "yellow"
+        },
+        {
+          "label": "cool and dry skin",
+          "value": "cool"
+        },
+        {
+          "label": "muscle cramps",
+          "value": "muscle_cramps"
+        },
+        {
+          "label": "none",
+          "value": "none"
+        }
+      ],
+      "allowMultiple$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-18T22:04:19.609Z",
+    "modifiedOn": "2021-03-19T00:32:28.516Z"
+  },
+  {
+    "id": "dropdown-ZJxhZ2",
+    "formData": {
+      "buttonText$en": "symptoms",
+      "placeholderText$en": "Select a choice",
+      "width$en": 200,
+      "displayInKeyboard$en": true,
+      "markdown$en": true,
+      "typing$en": true,
+      "message$en": "Do you experience any of the following?",
+      "options$en": [
+        {
+          "label": "throbbing pain",
+          "value": "thr_pain"
+        },
+        {
+          "label": "nausea",
+          "value": "nausea"
+        },
+        {
+          "label": "vomiting",
+          "value": "vomiting"
+        },
+        {
+          "label": "none",
+          "value": "none"
+        }
+      ],
+      "allowCreation$en": false,
+      "allowMultiple$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-18T22:06:17.465Z",
+    "modifiedOn": "2021-03-19T00:32:40.970Z"
+  },
+  {
+    "id": "dropdown-S2kBMr",
+    "formData": {
+      "buttonText$en": "Are you currently experiencing any of these symptoms?",
+      "placeholderText$en": "Select that applies:",
+      "width$en": 200,
+      "displayInKeyboard$en": true,
+      "markdown$en": true,
+      "typing$en": true,
+      "message$en": "Are you currently experiencing any of these symptoms?",
+      "options$en": [
+        {
+          "label": "Changes in bowel or bladder habits",
+          "value": "bowel or bladder"
+        },
+        {
+          "label": "Persistent cough or trouble breathing",
+          "value": "cough or breath"
+        },
+        {
+          "label": "Difficulty swallowing",
+          "value": "Difficulty swallowing"
+        },
+        {
+          "label": "Hoarseness",
+          "value": "Hoarseness"
+        },
+        {
+          "label": "Persistent indigestion or discomfort after eating",
+          "value": " indigestion after eating"
+        },
+        {
+          "label": "Persistent, unexplained muscle or joint pain",
+          "value": "muscle or joint pain"
+        },
+        {
+          "label": "Persistent, unexplained fevers or night sweats",
+          "value": "Unexplained fevers or night sweats"
+        },
+        {
+          "label": "Unexplained bleeding or bruising",
+          "value": "bleeding or bruising"
+        },
+        {
+          "label": "None of the above",
+          "value": "none"
+        }
+      ],
+      "allowMultiple$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-03-21T21:34:01.121Z",
+    "modifiedOn": "2021-03-21T21:34:01.121Z"
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "id": "greetings",
+  "name": "greetings",
+  "type": "pattern",
+  "occurrences": [],
+  "sensitive": false,
+  "fuzzy": 0.8,
+  "examples": [
+    "hey"
+  ],
+  "pattern": "hey",
+  "matchCase": false
+}

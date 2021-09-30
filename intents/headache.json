@@ -1,0 +1,28 @@
+{
+  "name": "headache",
+  "utterances": {
+    "en": [
+      "Headache",
+      "I have [headache](headache)",
+      "[headache](headache)",
+      "[headache remedy](headache)",
+      "I am having [severe headache](headache)",
+      "I feel my [head is aching](headache)",
+      "[head ache](headache)",
+      "having [headache](headache)"
+    ]
+  },
+  "slots": [
+    {
+      "id": "5T-SqZxXJ16e0NqNcjhYB",
+      "name": "headache",
+      "entities": [
+        "headache"
+      ],
+      "color": 1
+    }
+  ],
+  "contexts": [
+    "global"
+  ]
+}

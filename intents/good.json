@@ -1,0 +1,28 @@
+{
+  "name": "good",
+  "utterances": {
+    "en": [
+      "good",
+      "[good](good)",
+      "I am doing [okay](good)",
+      "I am doing [well](good)",
+      "I am doing [good](good)",
+      "I am [excellent](good)",
+      "I am [fine](good)",
+      "I am [good](good)"
+    ]
+  },
+  "slots": [
+    {
+      "id": "fDriFK9Yq5sDl2uB5aDsj",
+      "name": "good",
+      "entities": [
+        "good"
+      ],
+      "color": 1
+    }
+  ],
+  "contexts": [
+    "global"
+  ]
+}
